@@ -1,0 +1,29 @@
+<div class="table">
+  <div class="table__header full-width">
+    <button mat-stroked-button color="primary" (click)="generateNewCoupons()">Generate coupons</button>
+  </div>
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 full-width">
+    <!-- id Column -->
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef> Id </th>
+      <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+    </ng-container>
+  
+    <!-- coupon Column -->
+    <ng-container matColumnDef="coupon">
+      <th mat-header-cell *matHeaderCellDef> Coupon </th>
+      <td mat-cell *matCellDef="let element"> {{element.coupon}} </td>
+    </ng-container>
+  
+    <!-- dateTime Column -->
+    <ng-container matColumnDef="dateTime">
+      <th mat-header-cell *matHeaderCellDef> Creation date time </th>
+      <td mat-cell *matCellDef="let element"> {{element.creationDateTime}} </td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    <td mat-footer-cell *matFooterCellDef></td>
+  </table>
+</div>
+hola

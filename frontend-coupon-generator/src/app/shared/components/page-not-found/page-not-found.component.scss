@@ -1,0 +1,16 @@
+@import "src/assets/variables.scss";
+:host {
+  .container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+
+    h1 {
+        align-self: center;
+        color: $primary;
+        font-size: xx-large;
+        font-weight: 900;
+    }
+  }
+}

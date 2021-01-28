@@ -1,0 +1,13 @@
+@import 'src/assets/variables.scss';
+
+.full-width {
+    width: 100%;
+}
+
+.table {
+    justify-content: center;
+    &__header {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
